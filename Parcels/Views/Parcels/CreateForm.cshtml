@@ -1,0 +1,15 @@
+@using Parcels.Models
+@model Parcel;
+
+<form action="/parcels" method="post">
+    <p>Enter the specs of your package!:</p>
+    <label for="length">Length (inches)</label>
+    <input id="length" name="length" type="number">
+    <label for="width">Width (inches)</label>
+    <input id="width" name="width" type="number">
+    <label for="height">Height (inches)</label>
+    <input id="height" name="height" type="number">
+    <label for="weight">Weight (pounds)</label>
+    <input id="weight" name="weight" type="number">
+    <button type="submit">Calculate Cost!</button>
+</form>
